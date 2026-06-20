@@ -169,5 +169,4 @@ Request the updated installer the same way you received this one.
 ---
 
 ## Demo
-
-![WFNetFilter Demo](https://i.imgur.com/REPLACE_WITH_DIRECT_IMAGE_ID.gif)
+![WFNetFilter Demo](https://i.imgur.com/x7Hhpss.mp4)
