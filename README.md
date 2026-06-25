@@ -174,5 +174,5 @@ Request the updated installer the same way you received this one.
 ---
 
 ## Demo
-[![Installation](./demo/WFNetFilterInstallationFlow.mp4)]
-[![Demo](./demo/WFNetFilterDemo.mp4)]
+![Installation](./demo/WFNetFilterInstallationFlow.mp4)
+![Demo](./demo/WFNetFilterDemo.mp4)
