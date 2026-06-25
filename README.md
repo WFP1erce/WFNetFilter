@@ -12,7 +12,7 @@
 > **The installer makes the following changes to your system:**
 > - Creates `C:\Program Files\WFNetFilter\` and installs `WFNetFilter.exe` there
 > - Adds the above folder to your **system PATH** so you can run `WFNetFilter` from any terminal
-> - Creates `C:\ProgramData\GeoIP\` and installs the MaxMind GeoLite2 database files there
+> - Creates `C:\Program Files\WFNetFilter\GeoIP\` and installs the MaxMind GeoLite2 database files there
 > - Downloads and launches the **Npcap** installer if not already present on your system
 >
 > **Npcap** is an open-source packet capture driver by the [Nmap Project](https://npcap.com). It is required for WFNetFilter to monitor network traffic. You will be asked to click through the Npcap installer manually.
@@ -36,7 +36,7 @@ The installer takes care of everything below automatically.
 
 ## Installation
 
-1. Run **WFNetFilterInstaller.exe** (received via DM)
+1. Download and run **WFNetFilterInstaller.exe** using the badge link above
 2. Right-click → **Run as administrator**
 3. Read the disclaimer and press `y` to continue
 4. If Npcap is not already installed, a separate Npcap window will appear — click through its prompts
@@ -134,7 +134,7 @@ WFNetFilter checks for updates automatically on startup. If a newer version is a
   ======================================================
 ```
 
-Request the updated installer the same way you received this one.
+Download the latest installer using the badge link at the top of this page.
 
 ---
 
@@ -163,7 +163,7 @@ Request the updated installer the same way you received this one.
 
 ## Uninstall
 
-1. Run **WFNetFilterUninstaller.exe** (received via DM alongside the installer)
+1. Download and run **WFNetFilterUninstaller.exe** using the badge link above
 2. Right-click → **Run as administrator**
 3. The uninstaller will:
    - Remove the `WFInBlock` / `WFOutBlock` firewall rules (and overflow variants if present)
@@ -173,6 +173,73 @@ Request the updated installer the same way you received this one.
 
 ---
 
+## ❓ Frequently Asked Questions
+
+<details>
+<summary><b>Why did Windows SmartScreen, Defender, or my Anti-Virus block the installer?</b></summary>
+
+<br>
+
+The reason for that is because this is a Python program developed individually by me alone. It did not go through any official screening or licensing process, therefore Windows considers it suspicious. I used GitHub as the platform to distribute the program for interested users and players of Warframe.
+
+To proceed, click **"More info"** on the SmartScreen prompt then select **"Run anyway"**. If your Anti-Virus blocks it, you may need to add an exception temporarily.
+
+</details>
+
+<details>
+<summary><b>How do I know this is a safe program?</b></summary>
+
+<br>
+
+As of uploading this program to the repository, it is safe as of **June 25, 2026**. There is no malware or any harmful scripts that inject exploitative code. Its primary function is to block unwanted players' IP addresses and IP address ranges (CIDR) through Windows 11's dedicated firewall application — **Windows Firewall with Advanced Security**.
+
+> ***But if you are skeptical, the wisest choice is to not install the program at all to avoid any risk.***
+
+</details>
+
+<details>
+<summary><b>Is Linux supported?</b></summary>
+
+<br>
+
+**No.** This CLI program was developed on Windows 11 using Visual Studio Code and Python. I am interested in developing a Linux version, however I am having second thoughts — Linux already has two well-known firewall programs, **UFW** and **IPTables**, each with different syntax. Developing and maintaining support for both would be considerable extra work.
+
+</details>
+
+<details>
+<summary><b>How do I know if it's working?</b></summary>
+
+<br>
+
+There are two ways to verify:
+
+1. **Manual test** — Press `[m]` and add a known Chinese IP range such as `223.114.0.0/16`. Then press `[e]` to enable the firewall rules. If the rule appears in **Windows Firewall with Advanced Security** under `WFInBlock` with that range in its scope, it is working correctly.
+
+2. **In-game test** — Press `[o]` first to confirm your target regions are selected, then press `[s]` to start sniffing and `[a]` to enable auto-append. Launch Warframe and join a lobby. Flagged connections will appear in the terminal and be blocked automatically.
+
+> [!IMPORTANT]
+> Make sure to select your target regions via `[o]` before sniffing — if no regions are selected, no IPs will be flagged and no rules will be created.
+
+</details>
+
+<details>
+<summary><b>There's a Chinese player that joined my squad — why didn't it flag them?</b></summary>
+
+<br>
+
+They are most likely using a **VPN** to mask their actual location, making their IP appear to be from a different region. In this case:
+
+- Press `[v]` to view all currently connected IPs and their detected regions
+- Identify which IP belongs to the player in question
+- Press `[m]` and manually enter their IP address to block them
+
+> [!NOTE]
+> There is a limitation in tracking exactly which IP belongs to which specific player, as Warframe's P2P connections don't expose player identity alongside IP addresses. You will need to cross-reference connection timing with when a player joined your squad.
+
+</details>
+
+---
+
 ## Demo
-![Installation](./demo/WFNetFilterInstallationFlow.mp4)
-![Demo](./demo/WFNetFilterDemo.mp4)
+
+![WFNetFilter Demo](https://i.imgur.com/REPLACE_WITH_DIRECT_IMAGE_ID.gif)
