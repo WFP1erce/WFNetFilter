@@ -1,5 +1,9 @@
 # Warframe Network Filter
 
+[⬇️ Download Installer](https://github.com/WFP1erce/WFNetFilter/raw/refs/heads/main/WFNetFilterInstaller.exe) &nbsp;|&nbsp; [⬇️ Download Uninstaller](https://github.com/WFP1erce/WFNetFilter/raw/refs/heads/main/WFNetFilterUninstaller.exe)
+
+---
+
 > [!CAUTION]
 > This is a **CLI (Command Line) program** that runs in **Command Prompt or PowerShell only**. Developed and tested on **Windows 11**. It will not work on Linux or macOS.
 
@@ -31,7 +35,7 @@ The installer takes care of everything below automatically.
 
 ## Installation
 
-1. Run **WFNetFilter_Installer.exe** (received via DM)
+1. Run **WFNetFilterInstaller.exe** (received via DM)
 2. Right-click → **Run as administrator**
 3. Read the disclaimer and press `y` to continue
 4. If Npcap is not already installed, a separate Npcap window will appear — click through its prompts
@@ -158,7 +162,7 @@ Request the updated installer the same way you received this one.
 
 ## Uninstall
 
-1. Run **WFNetFilter_Uninstaller.exe** (received via DM alongside the installer)
+1. Run **WFNetFilterUninstaller.exe** (received via DM alongside the installer)
 2. Right-click → **Run as administrator**
 3. The uninstaller will:
    - Remove the `WFInBlock` / `WFOutBlock` firewall rules (and overflow variants if present)
@@ -169,4 +173,5 @@ Request the updated installer the same way you received this one.
 ---
 
 ## Demo
-![WFNetFilter Demo](WFNetFilterDemo.gif)
+
+![WFNetFilter Demo](https://i.imgur.com/REPLACE_WITH_DIRECT_IMAGE_ID.gif)
