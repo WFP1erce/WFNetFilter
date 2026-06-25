@@ -1,6 +1,7 @@
 # Warframe Network Filter
 
-[⬇️ Download Installer](https://github.com/WFP1erce/WFNetFilter/raw/refs/heads/main/WFNetFilterInstaller.exe) &nbsp;|&nbsp; [⬇️ Download Uninstaller](https://github.com/WFP1erce/WFNetFilter/raw/refs/heads/main/WFNetFilterUninstaller.exe)
+[![Download Installer](https://img.shields.io/badge/⬇️_Download-WFNetFilter_Installer-brightgreen?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/WFP1erce/WFNetFilter/raw/refs/heads/main/WFNetFilterInstaller.exe)
+[![Download Uninstaller](https://img.shields.io/badge/⬇️_Download-WFNetFilter_Uninstaller-red?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/WFP1erce/WFNetFilter/raw/refs/heads/main/WFNetFilterUninstaller.exe)
 
 ---
 
