@@ -242,6 +242,6 @@ They are most likely using a **VPN** to mask their actual location, making their
 
 ## Demo
 
-![WFNetFilter Demo](./Demo/WFNetFilterDemo.gif)
-![WFNetFilter Installation](./Demo/WFNetFilterInstallationFlow.gif)
+![WFNetFilter Demo](WFNetFilterDemo.gif)
+![WFNetFilter Installation](WFNetFilterInstallationFlow.gif)
 
