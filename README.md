@@ -4,6 +4,11 @@
 [![Download Uninstaller](https://img.shields.io/badge/⬇️_Download-WFNetFilter_Uninstaller-red?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/WFP1erce/WFNetFilter/raw/refs/heads/main/WFNetFilterUninstaller.exe)
 
 ---
+# Update
+## Version 1.0.1
+- Added remove IP Feature using [r]
+- Adjusted manual IP append [m], instead of ranged IP address when typing the specific address. It will only append that one specific IP Address instead of the range x.x.0.0 - x.x.255.255 **OR** x.x.0.0/16
+---
 
 > [!CAUTION]
 > This is a **CLI (Command Line) program** that runs in **Command Prompt or PowerShell only**. Developed and tested on **Windows 11**. It will not work on Linux or macOS.
